@@ -1,0 +1,476 @@
+/* ============================================
+   Modern DevOps Blog Stylesheet
+   Professional, clean, developer-focused design
+   ============================================ */
+
+:root {
+  /* Color Palette - Dark mode friendly */
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #21262d;
+  --text-primary: #e6edf3;
+  --text-secondary: #7d8590;
+  --accent-primary: #58a6ff;
+  --accent-hover: #79c0ff;
+  --border-color: #30363d;
+  --code-bg: #161b22;
+  --success: #3fb950;
+  --warning: #d29922;
+  
+  /* Typography */
+  --font-main: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Layout */
+  --max-width: 900px;
+  --border-radius: 6px;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-sm);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: var(--spacing-xl);
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+em {
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* ============================================
+   Header & Navigation
+   ============================================ */
+
+header {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--spacing-md) 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  background-color: rgba(22, 27, 34, 0.95);
+}
+
+header .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+header h1 a {
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+header h1 a:hover {
+  text-decoration: none;
+  color: var(--accent-primary);
+}
+
+nav {
+  margin-top: var(--spacing-sm);
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--text-primary);
+  background-color: var(--bg-tertiary);
+  text-decoration: none;
+}
+
+header hr {
+  display: none; /* Remove HR from header */
+}
+
+/* ============================================
+   Main Content
+   ============================================ */
+
+main {
+  flex: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-md);
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}
+
+/* ============================================
+   Page & Post Content
+   ============================================ */
+
+.page-content,
+.post {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
+}
+
+.post-date {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+/* ============================================
+   Lists
+   ============================================ */
+
+ul, ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+li a {
+  color: var(--accent-primary);
+}
+
+/* Blog list items */
+article ul li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.8;
+}
+
+article ul li a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+article ul li small {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+
+code {
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  overflow-x: auto;
+  margin-bottom: var(--spacing-md);
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  border: none;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* ============================================
+   Blockquotes
+   ============================================ */
+
+blockquote {
+  border-left: 4px solid var(--accent-primary);
+  padding-left: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  color: var(--text-secondary);
+  font-style: italic;
+  background-color: var(--bg-tertiary);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--spacing-md);
+  background-color: var(--bg-secondary);
+}
+
+th, td {
+  padding: var(--spacing-sm);
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--bg-tertiary);
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
+/* ============================================
+   Horizontal Rules
+   ============================================ */
+
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: var(--spacing-xl) 0;
+}
+
+/* ============================================
+   Images
+   ============================================ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  margin: var(--spacing-md) 0;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+footer {
+  background-color: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: var(--spacing-lg) 0;
+  margin-top: auto;
+  text-align: center;
+}
+
+footer p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+footer hr {
+  display: none; /* Remove HR from footer */
+}
+
+/* ============================================
+   Call-to-Action / Highlights
+   ============================================ */
+
+.highlight-box {
+  background-color: var(--bg-tertiary);
+  border-left: 4px solid var(--success);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-md) 0;
+}
+
+/* ============================================
+   Contact Form Embed Support
+   ============================================ */
+
+.contact-form-container {
+  background-color: var(--bg-tertiary);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  margin: var(--spacing-lg) 0;
+}
+
+.contact-form-container iframe {
+  width: 100%;
+  min-height: 500px;
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+  
+  h2 {
+    font-size: 1.35rem;
+  }
+  
+  .page-content,
+  .post {
+    padding: var(--spacing-md);
+  }
+  
+  nav {
+    gap: var(--spacing-sm);
+  }
+  
+  table {
+    font-size: 0.85rem;
+  }
+  
+  th, td {
+    padding: var(--spacing-xs);
+  }
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-muted {
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: var(--spacing-sm); }
+.mb-2 { margin-bottom: var(--spacing-md); }
+.mb-3 { margin-bottom: var(--spacing-lg); }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: var(--spacing-sm); }
+.mt-2 { margin-top: var(--spacing-md); }
+.mt-3 { margin-top: var(--spacing-lg); }
+
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  
+  header, footer, nav {
+    display: none;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  
+  .page-content, .post {
+    border: none;
+    background: none;
+  }
+}

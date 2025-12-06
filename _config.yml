@@ -1,0 +1,71 @@
+
+# Site Settings
+title: "Automation Stack"
+description: "A personal space for exploring automation, DevSecOps, cloud platforms, and Kubernetes through real projects"
+baseurl: "" 
+url: "https://chindi-m.github.io" 
+
+# Author Information (used by RSS feed)
+author:
+  name: "Chindi"
+  # email: ""
+  # twitter: ""
+
+# Social Links
+social:
+  github: chindi-m
+  # linkedin: username
+  # twitter: handle
+
+# Build Settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title.html
+
+# theme: jekyll-theme-architect
+
+future: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Jekyll Feed Settings (optional customization)
+feed:
+  posts_limit: 20
+  excerpt_only: true
+
+# Collections 
+# collections:
+#   projects:
+#     output: true
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+
+# Pagination 
+# paginate: 10
+# paginate_path: "/blog/page:num/"
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Chindi"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
