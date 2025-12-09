@@ -5,7 +5,7 @@ title: Blog
 
 # 📝 Blog
 
-I write about **cloud architecture, DevSecOps, automation, and platform engineering**—with a focus on practical, actionable content that you can apply to your own projects.
+I write about **cloud architecture, DevSecOps, automation, and platform engineering**, with a focus on practical, actionable content that you can apply to your own projects.
 
 ---
 
@@ -30,7 +30,7 @@ I write about **cloud architecture, DevSecOps, automation, and platform engineer
 Terraform modules, best practices, multi-cloud strategies, and lessons from production deployments.
 
 **☸️ Kubernetes & Containers**  
-Cluster management, GitOps workflows, debugging production incidents, and container optimization.
+Cluster management, GitOps workflows, debugging production incidents, and container optimisation.
 
 **🔒 DevSecOps**  
 Security scanning in CI/CD, policy-as-code, secrets management, and building secure pipelines.

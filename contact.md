@@ -24,4 +24,4 @@ title: Contact
 
 ## Response Time
 
-I typically respond within 24-48 hours on weekdays. If you don't hear back, feel free to ping me again—sometimes emails get lost!
+I typically respond within 24-48 hours on weekdays. If you don't hear back, feel free to ping me again, sometimes emails get lost!

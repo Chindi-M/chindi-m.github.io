@@ -10,7 +10,7 @@ A short while ago, I couldn't tell you the difference between Docker and a shipp
 
 ## The Reality Check Nobody Talks About
 
-DevOps isn't just about learning tools, it's about understanding **systems thinking**. You need to see how applications, infrastructure, security, and operations intersect. This mindset shift was harder than learning any specific technology.
+DevOps isn't just about learning tools; it’s about seeing the bigger picture through **systems thinking**. You need to see how applications, infrastructure, security, and operations intersect. This mindset shift was harder than learning any specific technology.
 
 ### What Actually Worked for Me
 
@@ -48,9 +48,9 @@ This foundation made everything else click faster.
 
 ### Month 2: Cloud & Containers
 - **AWS**: EC2, VPC, S3, IAM
-- **Docker**: Containerized my own applications
+- **Docker**: Containerised my own applications
 - **CI/CD**: Set up GitHub Actions for automated builds
-- **Project**: Deployed a Dockerized app on EC2 with a basic pipeline
+- **Project**: Deployed a Dockerised app on EC2 with a basic pipeline
 
 ### Month 3: Automation & Orchestration
 - **Terraform**: Codified my entire AWS setup
@@ -69,7 +69,7 @@ Bolting on security later is painful. Learn about IAM roles, least privilege, an
 **❌ Not documenting my learning**  
 This blog exists because I wish I'd documented from day one. Your future self will thank you.
 
-**❌ Comparing myself to senior engineers**  
+**❌ Comparing myself to more experienced engineers**  
 They've been doing this for years. Focus on your own progress.
 
 ## Resources That Actually Helped
