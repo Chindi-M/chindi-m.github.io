@@ -5,9 +5,9 @@ title: Home
 
 # My Personal Lab: Exploring Cloud, DevSecOps, AI, and Automation
 
-Hi, I'm passionate about automation, security, and building resilient, scalable infrastructure.  
+Hi, I'm passionate about automation, security, and building resilient, scalable infrastructure.
 
-On this personal blog, I experiment with cloud platforms, DevSecOps, AI, and automation; turning complex challenges into elegant, maintainable solutions, from Kubernetes clusters to fully automated cloud environments.
+This is my personal lab, a space where I experiment with cloud platforms, DevSecOps, AI, and automation. I turn complex challenges into elegant, maintainable solutions, from Kubernetes clusters to fully automated cloud environments.
 
 ---
 
@@ -16,7 +16,7 @@ On this personal blog, I experiment with cloud platforms, DevSecOps, AI, and aut
 I specialise in:
 
 - **Infrastructure as Code** : Terraform, Pulumi, AWS CDK
-- **Kubernetes & Container Orchestration** : EKS, GKS, Docker, Helm
+- **Kubernetes & Container Orchestration** : EKS, GKE, Docker, Helm
 - **CI/CD & Automation** : GitHub Actions, GitLab CI, Jenkins, ArgoCD
 - **Cloud Architecture** : AWS, GCP, Azure multi-cloud solutions
 - **DevSecOps** : Security scanning, compliance, secrets management
