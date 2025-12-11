@@ -21,6 +21,9 @@ title: Contact
 </div>
 
 ---
+## RSS Feed
+Subscribe via RSS to get new posts in your feed reader.  
+🔗 [RSS Feed](/feed.xml)
 
 ## Response Time
 
